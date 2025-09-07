@@ -1,0 +1,158 @@
+/* 🌈 Dream Sync Global Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fce9f1, #eaf4fc, #e6f9e0, #fff7e0, #f3e6ff);
+  background-size: 500% 500%;
+  animation: gradientBG 20s ease infinite;
+  color: #333;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6a1b9a;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  margin: 0 0.8rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff6fa5;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  z-index: 1;
+}
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #444;
+}
+.dropdown-content a:hover {
+  background: #ffe6eb;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(120deg, #ffe0f7, #e2f3ff, #f4ffe0);
+}
+.hero h1 {
+  font-size: 3rem;
+  color: #444;
+}
+.hero p {
+  max-width: 700px;
+  margin: 1rem auto;
+  font-size: 1.2rem;
+  color: #555;
+}
+.hero img {
+  max-width: 80%;
+  border-radius: 20px;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+form input, form textarea, form button {
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+form button {
+  background: #ffb3c6;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+form button:hover {
+  background: #ff8fab;
+  color: #fff;
+}
+
+footer {
+  background: #ffffffcc;
+  padding: 1rem;
+  text-align: center;
+  color: #555;
+  margin-top: 3rem;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}
+
+/* 🌙 Theme switch button */
+.theme-toggle {
+  background: #ffefef;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
